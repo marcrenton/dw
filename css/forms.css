@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.contact-form {
+  --form-text-color: black;
+  --form-succes-color: #4caf50;
+  --form-error-color: #f44436;
+  --form-placeholder-color: #4cff;
+  --form-bg-color: #ddd;
+  --form-border-color: #222;
+  background-image: url(/assets/cielo.png);
+  background-size: contain;
+
+  border: thin solid var(--form-border-color);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.contact-form > * {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--form-text-color);
+  caret-color: var(--form-placeholder-color);
+}
+.send {
+  background-color: var(--form-placeholder-color);
+  margin-bottom: 0;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.25rem;
+  color: white;
+}
+.contact-form > *::placeholder {
+  color: var(--form-placeholder-color);
+}
+
+.send[type="submit"]:hover {
+  cursor: default;
+  cursor: pointer;
+  opacity: 75%;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form > *[required]:invalid {
+  border: thin solid var(--form-error-color);
+}
+.contact-form > *[required]:valid {
+  border: thin solid var(--form-succes-color);
+}

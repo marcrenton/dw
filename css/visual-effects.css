@@ -285,3 +285,35 @@ html {
 .dark-mode img {
   filter: invert(1);
 }
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.blend-modes img {
+  /* mix-blend-mode: normal;
+  mix-blend-mode: color;
+  mix-blend-mode: color-dodge;
+  mix-blend-mode: screen; */
+  mix-blend-mode: multiply;
+}
+
+.bg-blend-mode {
+  background-image: url(/assets/puesta.jpg), url(/assets/aves.png);
+  background-size: cover;
+  background-blend-mode: normal;
+  background-blend-mode: screen;
+  background-blend-mode: darken;
+  background-blend-mode: multiply;
+}
+
+.clip-path {
+  clip-path: circle(3rem);
+  clip-path: circle(100px at top);
+  clip-path: circle(100px at bottom);
+  clip-path: circle(100px at left top);
+  clip-path: circle(100px at 70% 90%);
+  clip-path: ellipse(2rem 1rem);
+  clip-path: ellipse(100px 50px at top left);
+}

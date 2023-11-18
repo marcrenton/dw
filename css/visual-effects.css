@@ -177,3 +177,111 @@ html {
     conic-gradient(cyan 0 50%, magenta 50% 80%, yellow 80%);
   border-radius: 50%;
 }
+
+.card {
+  border: thick solid #000;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  width: 600px;
+  height: 400px;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 50%;
+}
+
+.filter {
+  /* filter: blur(0.25rem);
+  filter: blur(0.15rem);
+  filter: brightness(0.75);
+  filter: brightness(0.25);
+  filter: brightness(2);
+  filter: contrast(0);
+  filter: contrast(0.7);
+  filter: contrast(1);
+  filter: contrast(2);
+  filter: grayscale(0);
+  filter: grayscale(0.75);
+  filter: grayscale(1);
+  filter: sepia(0);
+  filter: sepia(0.25);
+  filter: sepia(0.5);
+  filter: sepia(0.75);
+  filter: sepia(1);
+  filter: hue-rotate(0deg);
+  filter: hue-rotate(30deg);
+  filter: hue-rotate(60deg);
+  filter: hue-rotate(120deg);
+  filter: hue-rotate(180deg);
+  filter: hue-rotate(240deg);
+  filter: hue-rotate(330deg);
+  filter: invert(0);
+
+  filter: invert(1);
+  filter: opacity(0);
+  filter: opacity(0.75);
+  filter: opacity(1);
+  filter: saturate(0.5);
+  filter: saturate(0.75);
+  filter: saturate(0.6);
+  filter: saturate(1);
+  filter: saturate(3);
+
+  filter: drop-shadow(1rem 1rem 1rem steelblue); */
+  filter: invert(1);
+}
+
+.filters-multiple {
+  filter: blur(0.1rem) hue-rotate(270deg) opacity(0.75) invert(1);
+}
+
+.relative {
+  position: relative;
+}
+
+.backdrop-filter,
+.backdrop-filter-multiple {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.backdrop-filter h4 {
+  font-size: 3rem;
+  background-color: rgba(255, 102, 255, 0.5);
+  padding: 2rem;
+  color: white;
+  border-radius: 1rem;
+  backdrop-filter: grayscale(1);
+  backdrop-filter: sepia(1);
+  backdrop-filter: hue-rotate(180deg);
+
+  backdrop-filter: blur(0.25rem);
+}
+
+.backdrop-filter-multiple h4 {
+  border-radius: 1rem;
+  padding: 2rem;
+  font-size: 3rem;
+  color: #fff;
+  background-color: rgba(255, 102, 255, 0.5);
+  backdrop-filter: blur(1rem) hue-rotate(240deg) opacity(0.75) invert(1);
+}
+
+.dark-mode {
+  background-color: #fff;
+  color: #000;
+  filter: invert(1);
+}
+
+.dark-mode img {
+  filter: invert(1);
+}
